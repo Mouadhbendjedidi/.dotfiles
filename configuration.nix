@@ -36,6 +36,7 @@
     tmux
     lsd
     neofetch
+    gcc
   ];
 
 
