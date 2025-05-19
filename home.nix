@@ -8,7 +8,26 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   home.packages = [
-    
+    pkgs.curl
+    pkgs.wget
+    pkgs.unzip
+    pkgs.sl
+    pkgs.cmatrix
+    pkgs.neovim
+    pkgs.htop
+    pkgs.bat
+    pkgs.eza
+    pkgs.zoxide
+    pkgs.ripgrep
+    pkgs.starship
+    pkgs.fzf
+    pkgs.bottom
+    pkgs.tree
+    pkgs.yazi
+    pkgs.tmux
+    pkgs.lsd
+    pkgs.neofetch
+    pkgs.gcc        
   ];
 
   home.file = {
@@ -42,7 +61,7 @@
       c = "clear";
     };
 
-    initExtra = ''
+    initContent = ''
       bindkey -e
       bindkey '^p' history-search-backward
       bindkey '^n' history-search-forward
@@ -60,7 +79,7 @@
           owner = "zsh-users";
           repo = "zsh-completions";
           rev = "master"; # or specific commit
-	  sha256 = "sha256-VmAjLg4+Eo6R1kI5rOZm1j/0hzJIl1rpiLM/UuCnmI8=";
+	  sha256 = "sha256-wJHa/j8yxGvzP8XxJ3wizGe9gfyzsVlkCHKXCcAvUs4=";
         };
       }
       {
