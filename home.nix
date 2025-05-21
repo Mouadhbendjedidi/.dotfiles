@@ -44,6 +44,8 @@
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
+    prezto.tmux.autoStartLocal = true;
+    prezto.tmux.autoStartRemote = true;
 
     history = {
       size = 5000;
@@ -69,8 +71,6 @@
 
       eval "$(fzf --zsh)"
       eval "$(zoxide init --cmd cd zsh)"
-      eval "$(starship init zsh)"
-      eval "$(tmux init zsh)"
     '';
     plugins = [
       {
@@ -128,6 +128,10 @@
       };
     };
   };
+  #tmux config!
+  programs.tmux.enable = false;
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs.home-manager = {
+    enable = true;
+  };
 }
