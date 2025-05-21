@@ -27,7 +27,8 @@
     pkgs.tmux
     pkgs.lsd
     pkgs.neofetch
-    pkgs.gcc        
+    pkgs.gcc
+    pkgs.glow
   ];
 
   home.file = {
