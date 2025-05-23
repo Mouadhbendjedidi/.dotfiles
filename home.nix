@@ -29,6 +29,7 @@
     pkgs.neofetch
     pkgs.gcc
     pkgs.glow
+    pkgs.pandoc
   ];
 
   home.file = {
@@ -102,7 +103,7 @@
     userEmail = "alfadjr2007@gmail.com"; # <- YOUR EMAIL
     extraConfig = {
       core = {
-        editor = "code"; # or "vim" or anything you want
+        editor = "nvim"; # or "vim" or anything you want
       };
       init.defaultBranch = "main"; # optional
     };
@@ -129,8 +130,6 @@
       };
     };
   };
-  #tmux config!
-  programs.tmux.enable = false;
   # Let Home Manager install and manage itself.
   programs.home-manager = {
     enable = true;
