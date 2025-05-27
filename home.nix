@@ -30,6 +30,7 @@
     pkgs.gcc
     pkgs.glow
     pkgs.pandoc
+    pkgs.lazygit
   ];
 
   home.file = {
