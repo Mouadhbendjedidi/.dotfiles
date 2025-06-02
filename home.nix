@@ -32,7 +32,6 @@
     pkgs.pandoc
     pkgs.lazygit
     pkgs.rustup
-    pkgs.rust-analyser
     pkgs.cargo-watch
   ];
 
