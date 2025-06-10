@@ -65,7 +65,6 @@
     shellAliases = {
       ls = "lsd -a";
       ll = "lsd -a -l";
-      vim = "nvim";
       c = "clear";
     };
 
