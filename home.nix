@@ -50,8 +50,6 @@
     enableCompletion = true;
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
-    prezto.tmux.autoStartLocal = true;
-    prezto.tmux.autoStartRemote = true;
 
     history = {
       size = 5000;
@@ -97,7 +95,7 @@
           owner = "zsh-users";
           repo = "zsh-completions";
           rev = "master"; # or specific commit
-	  sha256 = "sha256-wJHa/j8yxGvzP8XxJ3wizGe9gfyzsVlkCHKXCcAvUs4=";
+	  sha256 = "sha256-qCoBWdBZMVmhnd2m5ffXxu0anGigJexeN0KgS+9bmvg=";
         };
       }
       {
