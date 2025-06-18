@@ -26,6 +26,7 @@
     pkgs.yazi
     pkgs.tmux
     pkgs.lsd
+    pkgs.nitch
     pkgs.neofetch
     pkgs.gcc
     pkgs.glow
@@ -67,6 +68,10 @@
     };
 
     initContent = ''
+      if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+        tmux attach-session -t default || tmux new-session -s default
+      fi
+
       bindkey -e
       bindkey '^p' history-search-backward
       bindkey '^n' history-search-forward
