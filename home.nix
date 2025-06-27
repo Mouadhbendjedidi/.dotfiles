@@ -27,7 +27,6 @@
     pkgs.tmux
     pkgs.lsd
     pkgs.nitch
-    pkgs.neofetch
     pkgs.gcc
     pkgs.glow
     pkgs.pandoc
@@ -35,6 +34,7 @@
     pkgs.rustup
     pkgs.cargo-watch
     pkgs.socat
+    pkgs.fastfetch
   ];
 
   home.file = {
