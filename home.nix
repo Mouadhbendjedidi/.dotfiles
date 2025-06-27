@@ -118,13 +118,14 @@
   # My Git Setup
   programs.git = {
     enable = true;
-    userName = "Mouadhbendjedidi"; # <- YOUR NAME
-    userEmail = "alfadjr2007@gmail.com"; # <- YOUR EMAIL
+    userName = "Mouadhbendjedidi"; 
+    userEmail = "alfadjr2007@gmail.com"; 
     extraConfig = {
       core = {
-        editor = "nvim"; # or "vim" or anything you want
+        editor = "nvim"; 
       };
-      init.defaultBranch = "main"; # optional
+      init.defaultBranch = "main"; 
+      pull.rebase = false;
     };
   };
 
