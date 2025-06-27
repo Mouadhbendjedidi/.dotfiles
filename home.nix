@@ -7,36 +7,6 @@
   home.homeDirectory = "/home/mouadh";
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
-<<<<<<< HEAD
-  home.packages = [
-    pkgs.curl
-    pkgs.wget
-    pkgs.unzip
-    pkgs.sl
-    pkgs.cmatrix
-    pkgs.neovim
-    pkgs.htop
-    pkgs.bat
-    pkgs.eza
-    pkgs.zoxide
-    pkgs.ripgrep
-    pkgs.starship
-    pkgs.fzf
-    pkgs.bottom
-    pkgs.tree
-    pkgs.yazi
-    pkgs.tmux
-    pkgs.lsd
-    pkgs.nitch
-    pkgs.gcc
-    pkgs.glow
-    pkgs.pandoc
-    pkgs.lazygit
-    pkgs.rustup
-    pkgs.cargo-watch
-    pkgs.socat
-    pkgs.fastfetch
-=======
   home.packages = with pkgs; [
     curl
     wget
@@ -64,7 +34,7 @@
     rustup
     cargo-watch
     socat
->>>>>>> 5e87b0a4663b2cbe1982f1e2344e13651ec35afd
+    fastfetch
   ];
 
   home.file = {
