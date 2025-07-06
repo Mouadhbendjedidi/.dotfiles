@@ -1,0 +1,3 @@
+- [ ] structure your dotfiles
+- [ ] tmux? (I like tmux because of it's taskbar be like)
+- [ ] neovim rather than vscode? it should be insane
