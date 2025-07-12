@@ -10,33 +10,13 @@
  
   time.timeZone = "Africa/Algiers";
   
-  networking.hostName = "bendjedidi";
+  wsl.wslConf.network.hostname = "shion";
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
-    git
-    curl
-    wget
-    unzip
-    sl
-    cmatrix
-    neovim
-    htop
-    bat
-    eza
-    zoxide
-    ripgrep
-    starship
-    fzf
-    bottom
-    tree
-    yazi
-    tmux
-    lsd
-    neofetch
-    gcc
+    
   ];
 
 

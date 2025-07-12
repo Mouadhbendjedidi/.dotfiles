@@ -15,7 +15,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
     in { 
       nixosConfigurations = {
-        bendjedidi = lib.nixosSystem {
+        shion = lib.nixosSystem {
           inherit system;
           modules = [ ./configuration.nix ];
           specialArgs = { inherit inputs; };
