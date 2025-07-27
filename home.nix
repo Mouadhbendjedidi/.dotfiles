@@ -35,6 +35,7 @@
     cargo-watch
     socat
     nitch
+    nodejs
   ];
 
   home.file = {
